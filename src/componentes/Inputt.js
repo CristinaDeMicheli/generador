@@ -15,6 +15,7 @@ export default function Inputt() {
       const Descargar = (e) => {
         html2canvas(document.querySelector("#exportar")).then(function(canvas) {
           let img = canvas.toDataURL("memes/jpg");
+          //console.log(img);
           let link = document.createElement("a");
           link.download = "descarga.jpg";
           link.href = img;
